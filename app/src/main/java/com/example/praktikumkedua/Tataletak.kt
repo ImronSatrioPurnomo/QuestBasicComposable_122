@@ -25,7 +25,18 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
-    Column(modifier = modifier.padding(all = 20.dp) {
+    Column(modifier = modifier.padding(top = 20.dp, start = 30.dp, bottom = 20.dp, end = 30.dp)) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
+    }
+}
+
+@Composable
+fun TataletakRow(modifier: Modifier) {
+    Row(modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
